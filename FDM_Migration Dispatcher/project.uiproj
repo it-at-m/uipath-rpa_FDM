@@ -1,0 +1,6 @@
+{
+  "Name": "FDM_Migration Dispatcher",
+  "ProjectType": "Process",
+  "Description": "Modified Robotic Enterprise Framework ",
+  "MainFile": "Main.xaml"
+}
