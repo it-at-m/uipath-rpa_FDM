@@ -112,7 +112,7 @@
       <AssemblyReference>NPOI</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Browser_Navigation" sap:VirtualizedContainerService.HintSize="790.8000000000001,8482.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Browser_Navigation" sap:VirtualizedContainerService.HintSize="746,8412" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_FolderPath" />
       <Variable x:TypeArguments="x:Boolean" Name="bool_folderExists" />
@@ -160,13 +160,13 @@
         </Sequence>
       </If.Else>
     </If>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: FUE - Landeshauptstadt München - Vorgangsauswahl" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="512.8,7236.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: FUE - Landeshauptstadt München - Vorgangsauswahl" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="512.8,7166.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="511.2,7034.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="511.2,6964" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,7 +184,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'IDNR'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="477.6,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Text="[in_str_Number]" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'IDNR'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="477.6,297.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Text="[in_str_Number]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="548, 531, 321, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl id='IFIDNR' tag='INPUT' type='text' class='' aaname='IDNR' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ef5f83f7-6645-4999-ae91-da5992820aa5" InformativeScreenshot="6793e14ad8f3a173ec8ec32830a56094.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -195,7 +195,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
               <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[Nothing]" Mode="Appears" Retry="True" Timeout="20" />
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[in_str_Number]" Mode="Appears" Retry="True" Timeout="20" />
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Suchen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="477.6,265.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
@@ -210,17 +210,16 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State '4012: Mit diesem Suchkr…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="477.6,853.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NCheckState DisplayName="Check App State '4012: Mit diesem Suchkr…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="477.6,731.2" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="449.6,470.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="449.6,348" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Kein Datensatz gefunden&quot;]" />
-                  <Throw Exception="[New Exception (&quot;Kein Datensatz gefunden zu Nr.:&quot; + in_str_Number)]" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
-                  <Throw Exception="[New BusinessRuleException]" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                  <Throw Exception="[New BusinessRuleException (&quot;Kein Datensatz gefunden zu Nr.:&quot; + in_str_Number)]" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Throw_2" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
@@ -519,6 +518,9 @@
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Url>
           <uix:TargetApp.WorkingDirectory>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.WorkingDirectory>

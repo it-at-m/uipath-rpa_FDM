@@ -111,7 +111,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Browser_Take_Screenshot" sap:VirtualizedContainerService.HintSize="751.6,3055.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Browser_Take_Screenshot" sap:VirtualizedContainerService.HintSize="746,3727.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_pdfPath" />
       <Variable x:TypeArguments="x:String" Name="str_siteName" />
@@ -122,16 +122,20 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="583.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Starte Screenshot&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: FUE - Landeshauptstadt München - Vorgangsauswahl" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="583.2,2692" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="c0de05eb-6459-496a-966e-ccbb4d746fd3" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: FUE - Landeshauptstadt München - Vorgangsauswahl" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="583.2,3364" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="c0de05eb-6459-496a-966e-ccbb4d746fd3" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="581.6,2489.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="581.6,3161.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="bool_fileExists" />
-              <Variable x:TypeArguments="x:Int32" Default="0" Name="int_counter" />
+              <Variable x:TypeArguments="x:Int32" Name="int_counter">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:Int32" />
+                </Variable.Default>
+              </Variable>
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -229,11 +233,29 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DisplayName="Inject Js Script 'FRAMESET'" sap:VirtualizedContainerService.HintSize="548,194.4" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="c0de05eb-6459-496a-966e-ccbb4d746fd3" ScriptCode="function(element, input) {&#xA;    try {&#xA;        var frame = window.top.frames['MAIN'];&#xA;&#xA;        if (!frame) {&#xA;            return 'MAIN frame not found';&#xA;        }&#xA;&#xA;        setTimeout(function() {&#xA;            try {&#xA;                frame.focus();&#xA;                frame.print();&#xA;            } catch (e) {&#xA;                console.log('Print error:', e.message);&#xA;            }&#xA;        }, 300);&#xA;&#xA;        return 'print scheduled';&#xA;    } catch (e) {&#xA;        return 'ERROR: ' + e.message;&#xA;    }&#xA;}" Version="V5">
+            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DelayAfter="10" DisplayName="Inject Js Script 'FRAMESET'" sap:VirtualizedContainerService.HintSize="548,194.4" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="c0de05eb-6459-496a-966e-ccbb4d746fd3" ScriptCode="function(element, input) {&#xA;    try {&#xA;        var frame = window.top.frames['MAIN'];&#xA;&#xA;        if (!frame) {&#xA;            return 'MAIN frame not found';&#xA;        }&#xA;&#xA;        setTimeout(function() {&#xA;            try {&#xA;                frame.focus();&#xA;                frame.print();&#xA;            } catch (e) {&#xA;                console.log('Print error:', e.message);&#xA;            }&#xA;        }, 300);&#xA;&#xA;        return 'print scheduled';&#xA;    } catch (e) {&#xA;        return 'ERROR: ' + e.message;&#xA;    }&#xA;}" Version="V5">
               <uix:NInjectJsScript.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="14, 210, 1910, 814" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='FRAMESET' /&gt;" Guid="bdbec74a-9c4b-4740-98ac-b0783b03990f" InformativeScreenshot="81e603839d7d6dffccc16e430c068eef.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NInjectJsScript.Target>
             </uix:NInjectJsScript>
+            <uix:NGetText DisplayName="Get Text" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548,142.4" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="c0de05eb-6459-496a-966e-ccbb4d746fd3" Version="V5" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Drucker Microsoft Print…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0de05eb-6459-496a-966e-ccbb4d746fd3" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="wilma.muenchen.de/home/startseite" DesignTimeRectangle="57, 210, 252, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;ctrl name='(23) WiLMA | Startseite' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Drucker Microsoft Print to PDF' role='menu button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Drucker Microsoft Print to PDF' /&gt;" Guid="2f459397-2216-4ecb-9004-b635263ef199" InformativeScreenshot="150d52084829d7470f802c16c126ab94.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='(23) WiLMA | Startseite - Profil 1 – Microsoft​ Edge' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="69, 216, 137, 19" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='(23) WiLMA | Startseite' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Drucker Microsoft Print to PDF' role='menu button' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Microsoft Print to PDF' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Microsoft Print to PDF' /&gt;" Guid="e016ae81-957e-4879-a7d5-de1d251db50e" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Als PDF speichern'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0de05eb-6459-496a-966e-ccbb4d746fd3" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="wilma.muenchen.de/home/startseite" DesignTimeRectangle="61, 246, 236, 32" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='(23) WiLMA | Startseite' role='document' /&gt;&lt;ctrl name='Drucker' role='list' /&gt;&lt;ctrl name='Als PDF speichern' role='list item' /&gt;" Guid="f01fd332-cbc0-46e3-bd90-c4c12270431d" InformativeScreenshot="c15c2a487ebd9e085f3bafbc0cbf0f15.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='(23) WiLMA | Startseite - Profil 1 – Microsoft​ Edge' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548,142.4" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c0de05eb-6459-496a-966e-ccbb4d746fd3" Version="V5" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Drucken'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548,265.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0de05eb-6459-496a-966e-ccbb4d746fd3" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="70, 934, 153, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='FUE - Landeshauptstadt München - Vorgangsauswahl' role='document' /&gt;&lt;ctrl name='Drucken' role='push button' /&gt;" Guid="5d1f887c-a43f-4b96-8cea-93abe08f38eb" InformativeScreenshot="936356eb649a91a2948b35b8838a46e2.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='FUE - Landeshauptstadt München - Vorgangsauswahl und 1 weitere S*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
