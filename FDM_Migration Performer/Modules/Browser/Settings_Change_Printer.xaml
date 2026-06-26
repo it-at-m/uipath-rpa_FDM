@@ -1,0 +1,225 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Edge_changePrinter" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Edge_changePrinter_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Edge_changePrinter" sap:VirtualizedContainerService.HintSize="746,2056" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Wähle print to PDF Drucker aus&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486.4,1858.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Versuchen" sap:VirtualizedContainerService.HintSize="484.8,1328" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Use Application: Einstellungen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1102.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="90e1785d-630c-43a4-8f50-2984d8c01452" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="449.6,848" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Drucker und Scanner'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,265.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90e1785d-630c-43a4-8f50-2984d8c01452" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="401, 425, 130, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='LandmarkTarget' idx='2' /&gt;&lt;uia cls='NamedContainerAutomationPeer' name='Empfohlene Einstellungen' /&gt;&lt;uia automationid='SystemSettings_Home_RecommendedSettings_EntryList_ItemsControl' cls='ListView' /&gt;&lt;uia cls='NamedContainerAutomationPeer' name='Drucker und Scanner' /&gt;&lt;uia cls='TextBlock' name='Drucker und Scanner' role='Text' /&gt;" Guid="1fcafea5-9bf0-4b3c-8974-7a01af6cc4f4" InformativeScreenshot="ae5661ad04fae78582a4696d6369a526.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel' title='Einstellungen' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verifizierungsziel" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="393, 483, 137, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='LandmarkTarget' idx='2' /&gt;&lt;uia automationid='SystemSettings_Device_PrinterList_ListView' cls='SettingsListItemsRepeaterAutomationPeer' name='Drucker und Scanner' /&gt;&lt;uia automationid='{db4854a1-6e24-11f0-94b0-f4ee08d9128b}_ButtonEntityItem' cls='NamedContainerAutomationPeer' name='Microsoft Print to PDF' /&gt;&lt;uia cls='NamedContainerAutomationPeer' name='Microsoft Print to PDF' /&gt;&lt;uia cls='TextBlock' name='Microsoft Print to PDF' /&gt;" Guid="305fb5b4-ce58-4ad7-b71f-85bd54ea4ec0" InformativeScreenshot="610921d6fc8c570db2640f12ee6bb7a9.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel' title='Einstellungen' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Microsoft Print to PDF …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,265.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90e1785d-630c-43a4-8f50-2984d8c01452" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="334, 458, 738, 69" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='LandmarkTarget' idx='2' /&gt;&lt;uia automationid='SystemSettings_Device_PrinterList_ListView' cls='SettingsListItemsRepeaterAutomationPeer' name='Drucker und Scanner' /&gt;&lt;uia automationid='{db4854a1-6e24-11f0-94b0-f4ee08d9128b}_ButtonEntityItem' cls='NamedContainerAutomationPeer' name='Microsoft Print to PDF' /&gt;" Guid="24d53758-b959-4bdc-8321-3df8efc47060" InformativeScreenshot="ef758c2552f1ccae853cbe153728dea2.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel' title='Einstellungen' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verifizierungsziel" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="448, 140, 182, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia automationid='pageContent' cls='LandmarkTarget' /&gt;&lt;uia cls='NamedContainerAutomationPeer' name='Microsoft Print to PDF' /&gt;&lt;uia automationid='SystemSettings_AdvancedPrinters_Banner_Info_DescriptionTextBlock' cls='TextBlock' name='Microsoft Print to PDF' /&gt;" Guid="00935a54-1295-449c-a722-c1af3393d18b" InformativeScreenshot="74ba627a376a304b7976438950dfbc03.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel' title='Einstellungen' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Als Standard'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,256.8" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90e1785d-630c-43a4-8f50-2984d8c01452" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="932, 145, 130, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia automationid='pageContent' cls='LandmarkTarget' /&gt;&lt;uia automationid='SystemSettings_AdvancedPrinters_Banner_Button' cls='Button' name='Als Standard' /&gt;" Guid="774de413-e74a-469b-8548-ae0bbec186f5" InformativeScreenshot="3da7a5a6cb4fad9e24284203d66c2afe.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel' title='Einstellungen' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verifizierungsziel" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="546, 168, 56, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia automationid='pageContent' cls='LandmarkTarget' /&gt;&lt;uia automationid='SystemSettings_AdvancedPrinters_Banner_Info_DescriptionTextBlock' cls='TextBlock' name='Standard' /&gt;" Guid="8dcc1366-0c75-4fcc-9245-a194bb8d4a5a" InformativeScreenshot="451fe7cb8bb4ccb28efd1f3cdc4cdb37.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel' title='Einstellungen' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="1325, -1019, 1104, 812" FilePath="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" IconBase64="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" InformativeScreenshot="46408189e6abff47d377c94bd2f89e57.png" Selector="&lt;wnd app='applicationframehost.exe'  title='Einstellungen' /&gt;" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Standarddrucker wurde gewechselt&quot;]" />
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,282.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Drucker konnte nicht gewechselt werden: &quot; + exception.Message]" />
+              <Rethrow sap:VirtualizedContainerService.HintSize="451.2,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Endlich" sap:VirtualizedContainerService.HintSize="484.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

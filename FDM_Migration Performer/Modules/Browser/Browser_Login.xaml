@@ -106,7 +106,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Führerschein_Screenshot_ausführen" sap:VirtualizedContainerService.HintSize="714,1480.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Führerschein_Screenshot_ausführen" sap:VirtualizedContainerService.HintSize="746,2076" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="sec_str_password" />
       <Variable x:TypeArguments="x:String" Name="str_Username" />
@@ -118,13 +118,13 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starte Browser Login&quot;]" />
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="rpa018_Login_Führerschein" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="486.4,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[sec_str_password]" Username="[str_Username]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: (25) WiLMA | Startseite" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1108" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="f34a54de-f12c-4520-9f3c-617dd0afe03b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: (25) WiLMA | Startseite" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1703.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="f34a54de-f12c-4520-9f3c-617dd0afe03b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="484.8,914.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="484.8,1509.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,7 +196,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Die Benutzerkennung ode…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,684" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f34a54de-f12c-4520-9f3c-617dd0afe03b" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Die Benutzerkennung ode…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,556.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f34a54de-f12c-4520-9f3c-617dd0afe03b" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="449.6,173.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -204,23 +204,53 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Throw Exception="[New Exception (&quot;Browser Login fehlgeschlagen: Benutzername oder Passwort ungültig&quot;)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                  <Throw Exception="[New Exception (&quot;Browser Login fehlgeschlagen: Benutzername oder Passwort ungültig&quot;)]" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Throw_1" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Browser Login erfolgreich&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="25, 219, 590, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='meldblock_gruen' tag='TD' /&gt;" Guid="55bc5b25-4043-4fb9-bffb-b744f61195c5" InformativeScreenshot="0d511682c4b29655fc7c021beaf74383.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='Security-Anmeldung an die Verfahren der LHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
+            <uix:NCheckState DisplayName="Check App State 'Fehler am Server. Nr = …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,556.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f34a54de-f12c-4520-9f3c-617dd0afe03b" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="449.6,173.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw Exception="[New Exception (&quot;Browser Login fehlgeschlagen: Benutzername oder Passwort ungültig&quot;)]" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="30, 224, 738, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='meldblock_gruen' tableRow='3' tag='TD' /&gt;" Guid="42a1da90-4e8f-4366-8abb-0e6ce296dda7" InformativeScreenshot="02ad9d5413d7af77ba55912a706623ee.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='Security-Anmeldung an die Verfahren der LHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Browser Login erfolgreich&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
