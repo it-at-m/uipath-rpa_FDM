@@ -118,7 +118,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Browser_Navigation" sap:VirtualizedContainerService.HintSize="678,10470.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Browser_Navigation" sap:VirtualizedContainerService.HintSize="678,10187.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_FolderPath" />
       <Variable x:TypeArguments="x:Boolean" Name="bool_folderExists" />
@@ -128,8 +128,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="584,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starte Navigation&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="584,212" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="619.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starte Navigation&quot;]" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="619.2,212" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -159,8 +159,8 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:FolderExistsX DisplayName="Folder Exists" Exists="[bool_folderExists]" sap:VirtualizedContainerService.HintSize="584,166.4" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[str_FolderPath]" />
-    <If Condition="[bool_folderExists]" sap:VirtualizedContainerService.HintSize="584,566.4" sap2010:WorkflowViewState.IdRef="If_2">
+    <ui:FolderExistsX DisplayName="Folder Exists" Exists="[bool_folderExists]" sap:VirtualizedContainerService.HintSize="619.2,166.4" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[str_FolderPath]" />
+    <If Condition="[bool_folderExists]" sap:VirtualizedContainerService.HintSize="619.2,566.4" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
@@ -182,19 +182,19 @@
         </Sequence>
       </If.Else>
     </If>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: FUE - Landeshauptstadt München - Vorgangsauswahl" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="584,9162.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Edge: FUE - Landeshauptstadt München - Vorgangsauswahl" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="619.2,8879.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="582.4,8960" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="617.6,8676.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FE-Behörde'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,265.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FE-Behörde'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="584,265.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="36, 441, 85, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='NAVI' tag='FRAME' /&gt;&lt;webctrl aaname='FE-Behörde' tag='A' /&gt;" Guid="9c8af4ed-31a7-4b58-ac31-d2e86735d4e5" InformativeScreenshot="d3142521dbbe8894fb63b651423e863d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -206,7 +206,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'IDNR'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,297.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Text="[in_str_Number]" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'IDNR'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="584,297.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Text="[in_str_Number]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="548, 531, 321, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl id='IFIDNR' tag='INPUT' type='text' class='' aaname='IDNR' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ef5f83f7-6645-4999-ae91-da5992820aa5" InformativeScreenshot="6793e14ad8f3a173ec8ec32830a56094.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -220,12 +220,12 @@
                 <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[in_str_Number]" Mode="Appears" Retry="True" Timeout="20" />
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Suchen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Suchen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="584,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="226, 731, 113, 22" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='SUBMIT' aaname='Suchen' class='button' /&gt;" Guid="5e55676e-71a4-4538-b6f6-3287d45cb623" InformativeScreenshot="d75dbe1cf3aa73cc5e3b45e093bf5d67.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State '4012: Mit diesem Suchkr…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="548.8,880.8" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NCheckState DisplayName="Check App State '4012: Mit diesem Suchkr…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="584,880.8" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="512,497.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
@@ -270,7 +270,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State Multiple Persons" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="548.8,1864" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NCheckState DisplayName="Check App State Multiple Persons" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="584,1864" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="449.6,1312.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -362,7 +362,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State 'EU-DateiFE-DatenVerfahr…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="548.8,1335.2" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'EU-DateiFE-DatenVerfahr…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="584,1335.2" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="512,840.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
@@ -436,7 +436,7 @@
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="418, 270, 203, 28" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl id='top2' tag='DIV' aaname='EU-Datei    ' /&gt;" Guid="9332fb6a-8c15-4789-a60e-b8eefaac91f5" InformativeScreenshot="f11ad588c2130b110b669c8ea561bab5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <uix:NHover DisplayName="Hover 'EU und AltFührerscheine'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,317.6" sap2010:WorkflowViewState.IdRef="NHover_2" InteractionMode="Simulate" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NHover DisplayName="Hover 'EU und AltFührerscheine'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="584,317.6" sap2010:WorkflowViewState.IdRef="NHover_2" InteractionMode="Simulate" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NHover.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="661, 255, 162, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl tag='DIV' aaname='EU und Alt    ' /&gt;" Guid="edd4065e-3ec2-4db4-8f04-b3a85eebee64" InformativeScreenshot="6f80e69d1eba5e29fae6b596adac3a85.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NHover.Target>
@@ -451,7 +451,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Führerscheine'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,265.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Führerscheine'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="584,265.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="704, 277, 90, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl parentid='item4' tag='A' aaname='Führerscheine' /&gt;" Guid="ff6e7cc5-97ee-491e-966b-1371bf380bb9" InformativeScreenshot="95a0a6d1bf85d9875d2ed74901909004.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
@@ -466,14 +466,14 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Browser_Take_screenshot - Invoke Workflow File (Modules\Browser\Browser_Take_screenshot.xaml)" sap:VirtualizedContainerService.HintSize="548.8,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Modules\Browser\Browser_Take_screenshot.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Browser_Take_screenshot - Invoke Workflow File (Modules\Browser\Browser_Take_screenshot.xaml)" sap:VirtualizedContainerService.HintSize="584,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Modules\Browser\Browser_Take_screenshot.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_str_number">[in_str_Number]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_str_FolderPath">[str_FolderPath]</InArgument>
                 <InOutArgument x:TypeArguments="x:Int32" x:Key="io_int_screenshotCounter">[out_int_screenshotCounter]</InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entzüge u.a.'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,265.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entzüge u.a.'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="584,265.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="36, 804, 88, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='NAVI' tag='FRAME' /&gt;&lt;webctrl aaname='Entzüge u.a.' tag='A' /&gt;" Guid="7e3410fe-d2c2-406e-a48d-b9ca9f40259c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAVCAYAAADLuIn8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHaSURBVFhH7Zk7jsIwEEBzwhyCEuUEHAFR5BChod2KHqXbM1Bwi21mZcjY45nxJ8s6wkoivYJgezzP9iSIBn6+oQj3HvZtCy3lOMh2K6OB7Vr0avgKbJRlE74wm/CFccK1hxyl6+GhDPCfjEcT6wCj+TzN53ST7WqmoPArXLodXO78fph1Cp8tVmOA03Oh5glfA/OF03a3AzkFKBdlE44DPM47eWpIvNfu9nc09tmfry4+jWne6/Gz947P5pDIKTt2oJ9jOp0RpPAANnCs3TOxgsK9BZ7m1U3jWuFKfBKHCzBkxWYE80n8uHtLuJ2gFYErHC8pdLI4Rk7SdkfZpMxzwr9nxyaJa2NTtO957CToILKwBik80cEJp8cHBWcIJ7uUJphOGuWyMVlJkcfcEZKXji37iPhIwt/fhXvtMoWTyfFEMGl6379XXng4tuwjFqT4Do8KV+SQUqQlIcuFq8XvlpQUclwZ20duKBs34U8KDzINPku4SyS88159gg8hbRfR73IfmvxkEHJi66dNAb2opbeYcJZE18NXQjhNCvuM/Nhy6bmvhRHZSCq2KDGeLzM+O9VJ4RVgpZDFluXgs6lKuFZSkNAr36dRl3BeqiqTbdj+8Vn4qm6H184vnA7HD23dsWsAAAAASUVORK5CYII=" InformativeScreenshot="df141d25ab5f819cdc7623de90616903.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.Anchors>
@@ -494,20 +494,20 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'Suchen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,193.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'Suchen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="584,193.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="226, 503, 113, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='SUBMIT' aaname='Suchen' class='button' /&gt;" Guid="931705c7-d28c-497f-91b5-23d4d9e6231d" InformativeScreenshot="19a800a0854b72e2da242640907b10b2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State '3180: Person nicht gefu…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="548.8,874.4" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+            <uix:NCheckState DisplayName="Check App State '3180: Person nicht gefu…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="584,2531.2" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="512,323.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="582.4,200.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,140.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                     <ui:MultipleAssign.AssignOperations>
                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -525,96 +525,110 @@
                       </scg:List>
                     </ui:MultipleAssign.AssignOperations>
                   </ui:MultipleAssign>
-                  <Throw Exception="[New BusinessRuleException (&quot;Person nicht gefunden&quot;)]" sap:VirtualizedContainerService.HintSize="478,114" sap2010:WorkflowViewState.IdRef="Throw_3" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="512,257.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="582.4,2045.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Browser_Take_screenshot - Invoke Workflow File (Modules\Browser\Browser_Take_screenshot.xaml)" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Modules\Browser\Browser_Take_screenshot.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Browser_Take_screenshot - Invoke Workflow File (Modules\Browser\Browser_Take_screenshot.xaml)" sap:VirtualizedContainerService.HintSize="548.8,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Modules\Browser\Browser_Take_screenshot.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_str_number">[in_str_Number]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_str_FolderPath">[str_FolderPath]</InArgument>
                       <InOutArgument x:TypeArguments="x:Int32" x:Key="io_int_screenshotCounter">[out_int_screenshotCounter]</InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                </Sequence>
-              </uix:NCheckState.IfNotExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 227, 1630, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='meldblock_rot' tag='DIV' aaname='3180: Person nicht gefunden!' /&gt;" Guid="e7442850-a807-403e-a4a3-f858972b0c74" InformativeScreenshot="a9ea4438cd3a449b2db0fe6f660f8f2b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-              </uix:NCheckState.Target>
-            </uix:NCheckState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'IDNR'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,265.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="272, 363, 83, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl aaname='&quot; + in_str_Number + &quot;' tag='A' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;div&amp;gt;a' isleaf='1' /&gt;&quot;]" Guid="18408197-b063-4c7c-9cd2-58b32e07c3be" InformativeScreenshot="de687ccac925c06d057ee8bc8a8a23c8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="Verifizierungsziel" Mode="Appears" Retry="True">
-                  <uix:VerifyExecutionOptions.Target>
-                    <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 251, 1612, 35" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='ueberschrift' tag='DIV' aaname='Maßnahmen - Entzüge u.a.*' /&gt;" Guid="38f04388-b90f-438c-b5f6-de8ed281b422" InformativeScreenshot="62d4984aca3e5fd9a0f1da3522a6b7ce.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-                  </uix:VerifyExecutionOptions.Target>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Entzüge u.a Personalien'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="548.8,1476.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="547.2,1093.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Weiter'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513.6,193.6" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'IDNR'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="548.8,265.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="226, 955, 113, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Weiter' class='button' /&gt;" Guid="92734bd7-4991-46a4-8b85-9de21fa38fcf" InformativeScreenshot="6320c6015e2eebb9a64ae6dcdc6569a9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                      <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="272, 363, 83, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl aaname='&quot; + in_str_Number + &quot;' tag='A' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;div&amp;gt;a' isleaf='1' /&gt;&quot;]" Guid="18408197-b063-4c7c-9cd2-58b32e07c3be" InformativeScreenshot="de687ccac925c06d057ee8bc8a8a23c8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                     </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verifizierungsziel" Mode="Appears" Retry="True">
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 251, 1612, 35" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='ueberschrift' tag='DIV' aaname='Maßnahmen - Entzüge u.a.*' /&gt;" Guid="38f04388-b90f-438c-b5f6-de8ed281b422" InformativeScreenshot="62d4984aca3e5fd9a0f1da3522a6b7ce.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
                   </uix:NClick>
-                  <uix:NCheckState DisplayName="Check App State '5410: Die Staatsangehör…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="513.6,840" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State 'Entzüge u.a Personalien'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="548.8,1513.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="512,465.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                        <Sequence.Variables>
-                          <Variable x:TypeArguments="x:String" Name="str_getText_Error" />
-                        </Sequence.Variables>
+                      <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="547.2,1139.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NGetText DisplayName="Get Text '5410: Die Staatsangehör…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" TextString="[str_getText_Error]" Version="V5">
-                          <uix:NGetText.Target>
-                            <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 227, 1612, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='meldblock_rot' tag='DIV' aaname='*' /&gt;" Guid="0a48940d-5c1c-4b1e-8305-74e1f975f8b9" InformativeScreenshot="fc0475734bcbc98099b6b1ca09eb4d85.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-                          </uix:NGetText.Target>
-                        </uix:NGetText>
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
-                          <ui:MultipleAssign.AssignOperations>
-                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
-                                <ui:AssignOperation.To>
-                                  <OutArgument x:TypeArguments="x:String">[out_str_Status]</OutArgument>
-                                </ui:AssignOperation.To>
-                                <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Weiter'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513.6,193.6" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="226, 955, 113, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Weiter' class='button' /&gt;" Guid="92734bd7-4991-46a4-8b85-9de21fa38fcf" InformativeScreenshot="6320c6015e2eebb9a64ae6dcdc6569a9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NCheckState DisplayName="Check App State '5410: Die Staatsangehör…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="513.6,885.6" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" Version="V5">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Ziel wird angezeigt" sap:VirtualizedContainerService.HintSize="512,343.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="str_getText_Error" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NGetText DisplayName="Get Text '5410: Die Staatsangehör…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8e8a34db-a161-4c63-b2b9-ab0e4641382c" TextString="[str_getText_Error]" Version="V5">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 227, 1612, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='meldblock_rot' tag='DIV' aaname='*' /&gt;" Guid="0a48940d-5c1c-4b1e-8305-74e1f975f8b9" InformativeScreenshot="fc0475734bcbc98099b6b1ca09eb4d85.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,140.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+                                <ui:MultipleAssign.AssignOperations>
+                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[out_str_Status]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(
     String.IsNullOrWhiteSpace(out_str_Status) OrElse out_str_Status = "Erfolgreich",
 	str_getText_Error,
 	out_str_Status + " &amp; " +str_getText_Error
 	)]</InArgument>
-                                </ui:AssignOperation.Value>
-                              </ui:AssignOperation>
-                            </scg:List>
-                          </ui:MultipleAssign.AssignOperations>
-                        </ui:MultipleAssign>
-                        <Throw Exception="[New BusinessRuleException (&quot;Fehlermeldung - Staatsangehörigkeit muss vorhanden sein&quot;)]" sap:VirtualizedContainerService.HintSize="478.4,113.6" sap2010:WorkflowViewState.IdRef="Throw_4" />
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                  </scg:List>
+                                </ui:MultipleAssign.AssignOperations>
+                              </ui:MultipleAssign>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="512,257.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Browser_Take_screenshot - Invoke Workflow File (Modules\Browser\Browser_Take_screenshot.xaml)" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Modules\Browser\Browser_Take_screenshot.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_str_number">[in_str_Number]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_str_FolderPath">[str_FolderPath]</InArgument>
+                                  <InOutArgument x:TypeArguments="x:Int32" x:Key="io_int_screenshotCounter">[out_int_screenshotCounter]</InOutArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 227, 1612, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='meldblock_rot' tag='DIV' aaname='*' /&gt;" Guid="4306da41-a500-45b3-860c-76d4980caa24" InformativeScreenshot="7f876cc0c78748f71c97678621d6f969.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="512,89.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="547.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -623,31 +637,21 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 227, 1612, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='meldblock_rot' tag='DIV' aaname='*' /&gt;" Guid="4306da41-a500-45b3-860c-76d4980caa24" InformativeScreenshot="7f876cc0c78748f71c97678621d6f969.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                      <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 256, 1612, 35" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='ueberschrift' tag='DIV' aaname='Maßnahmen - Entzüge u.a. - Personalien -' /&gt;" Guid="f269f9a5-0ee7-4ce9-a7b2-1d40491a25af" InformativeScreenshot="5119d82b821860bcdd2199fe8f255308.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                     </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckState>
-                </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Ziel wird nicht angezeigt" sap:VirtualizedContainerService.HintSize="547.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 256, 1612, 35" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='ueberschrift' tag='DIV' aaname='Maßnahmen - Entzüge u.a. - Personalien -' /&gt;" Guid="f269f9a5-0ee7-4ce9-a7b2-1d40491a25af" InformativeScreenshot="5119d82b821860bcdd2199fe8f255308.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                <uix:TargetAnchorable BrowserURL="natk2.muenchen.de/cgi-bin/nww3vst/stdlhm/ZWANMPN0" DesignTimeRectangle="214, 227, 1630, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='MAIN' tag='FRAME' /&gt;&lt;webctrl class='meldblock_rot' tag='DIV' aaname='3180: Person nicht gefunden!' /&gt;" Guid="e7442850-a807-403e-a4a3-f858972b0c74" InformativeScreenshot="a9ea4438cd3a449b2db0fe6f660f8f2b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='FUEC' title='FUE - Landeshauptstadt München - Vorgangsauswahl' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Browser_Take_screenshot - Invoke Workflow File (Modules\Browser\Browser_Take_screenshot.xaml)" sap:VirtualizedContainerService.HintSize="548.8,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Modules\Browser\Browser_Take_screenshot.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_str_number">[in_str_Number]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_str_FolderPath">[str_FolderPath]</InArgument>
-                <InOutArgument x:TypeArguments="x:Int32" x:Key="io_int_screenshotCounter">[out_int_screenshotCounter]</InOutArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -672,6 +676,6 @@
         </uix:TargetApp>
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="584,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Navigation beendet&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="619.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Navigation beendet&quot;]" />
   </Sequence>
 </Activity>
