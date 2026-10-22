@@ -56,11 +56,13 @@
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <scg:List x:TypeArguments="AssemblyReference" Capacity="60">
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
@@ -71,6 +73,8 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
@@ -80,8 +84,10 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
@@ -90,18 +96,13 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Description: &#xA;Creates a report about all relevant QueueItems of a specific Queue and other keys (s.Possible Keys). QueueItems can be filteres by the criteria &quot;time&quot; and &quot;status&quot;&#xA;&#xA;Arguments:&#xA;in_str_queueName: Orchestrator Queue Name&#xA;in_arrStr_excludedTransactionStatus: Array of TransactionStatus that will be excluded for report&#xA;in_dateTime_lessThanDay: DateTime to filter the maximum TimeType the queues.&#xA;in_dateTime_greaterThanDay: DateTime to filter the maximum TimeType of the queues.&#xA;out_dt_report: DataTable of the following keys: &quot;SpecificData&quot;,&quot;OutputData&quot;,&quot;Reference&quot;,&quot;Status&quot;,&quot;StartProcessing&quot;,&quot;SecondsInPreviousAttempts&quot;,&quot;ProcessingException(Type,Reason,Details)&quot;&#xA;in_str_timeType: Filtercriteria to filter the queueItems. Possibilities: CreationTime,StartProcessing,EndProcessing. DefaultValue: EndProcessing&#xA;in_arrStr_keys: Array of all Keys that will be added for report, only in case if key his not empty&#xA;&#xA;Precondition:&#xA;Add Package UiPath.Web.Activities (min.1.4.3)&#xA;Please Check the current CultureInfo&#xA;&#xA;Postcondition:&#xA;None&#xA;&#xA;Exceptions:&#xA;BRE QueueID: HTTP Request failed to get the QueueID by name&#xA;BRE QueueItems: HTTP Request failed to get the QueueItems by their QueueID&#xA;BRE Report is empty: there are no relevant QueueItems, so there will also be no report&#xA;BRE TimeType: Invalid TimeType. Possibilities: CreationTime,StartProcessing,EndProcessing&#xA;&#xA;&#xA;Possible Keys: &quot;QueueDefinitionId&quot;,&quot;SpecificContent&quot;,&quot;Output&quot;,&quot;Analytics&quot;,&quot;Status&quot;,&quot;ReviewStatus&quot;,&quot;ReviewerUserId&quot;,&quot;Key&quot;,&quot;Reference&quot;,&quot;DueDate&quot;,&quot;RiskSlaDate&quot;,&quot;Priority&quot;,&quot;DeferDate&quot;,&quot;CreationTime&quot;,&quot;StartProcessing&quot;,&quot;EndProcessing&quot;,&quot;SecondsInPreviousAttempts&quot;,&quot;AncestorId&quot;,&quot;RetryNumber&quot;,&quot;Progress&quot;,&quot;RowVersion&quot;,&quot;OrganizationUnitId&quot;,&quot;OrganizationUnitFullyQualifiedName&quot;,&quot;Id&quot;&#xA;&#xA;" DisplayName="Sequence CreateQueueReport" sap:VirtualizedContainerService.HintSize="1011,4783" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -168,7 +169,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message Get QueueDefinitionId" sap:VirtualizedContainerService.HintSize="683,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Get QueueDefinitionId from Queue: &quot;+in_str_queueName]" />
       <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" ResponseHeaders="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request QueueID" sap:VirtualizedContainerService.HintSize="683,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_1" Method="GET" RelativeEndpoint="[“/odata/QueueDefinitions?$filter=Name eq '&quot; + in_str_queueName + &quot;'&quot;]" Result="[str_response]" StatusCode="[int_statusCode]" />
-      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON QueueReport" sap:VirtualizedContainerService.HintSize="683,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_9" JsonObject="[jsonObject]" JsonString="[str_response]" />
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON QueueReport" sap:VirtualizedContainerService.HintSize="683,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_9" JsonObject="[jsonObject]" JsonString="[str_response]" />
       <If Condition="[int_statusCode=200]" DisplayName="If StatusCode QueueReport is 200" sap:VirtualizedContainerService.HintSize="683,668" sap2010:WorkflowViewState.IdRef="If_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -375,7 +376,7 @@
                     </scg:List>
                   </ui:MultipleAssign.AssignOperations>
                 </ui:MultipleAssign>
-                <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON all queueItems" sap:VirtualizedContainerService.HintSize="431,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonObject]" JsonString="[str_allQueueItems]" />
+                <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON all queueItems" sap:VirtualizedContainerService.HintSize="431,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonObject]" JsonString="[str_allQueueItems]" />
               </Sequence>
             </If.Then>
             <If.Else>
@@ -388,7 +389,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON ErrorMessage" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_10" JsonObject="[json_exceptionGetQueueItems]" JsonString="[str_response]" />
+                <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON ErrorMessage" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_10" JsonObject="[json_exceptionGetQueueItems]" JsonString="[str_response]" />
                 <Throw DisplayName="Throw BRE QueueItems" Exception="[new BusinessRuleException(json_exceptionGetQueueItems.SelectToken(&quot;message&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
               </Sequence>
             </If.Else>
@@ -441,7 +442,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON Data" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_8" JsonObject="[json_Data]" JsonString="[QueueItem(key).ToString]" />
+                              <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON Data" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_8" JsonObject="[json_Data]" JsonString="[QueueItem(key).ToString]" />
                               <If Condition="[IsNothing(json_Data)]" DisplayName="If jsonData" sap:VirtualizedContainerService.HintSize="388,262" sap2010:WorkflowViewState.IdRef="If_18">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -549,7 +550,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON ProcessingException" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_5" JsonObject="[jsonException]" JsonString="[QueueItem(&quot;ProcessingException&quot;).ToString]" />
+                  <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON ProcessingException" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_5" JsonObject="[jsonException]" JsonString="[QueueItem(&quot;ProcessingException&quot;).ToString]" />
                   <If Condition="[IsNothing(jsonException)]" DisplayName="If jsonData" sap:VirtualizedContainerService.HintSize="334,182" sap2010:WorkflowViewState.IdRef="If_20">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
